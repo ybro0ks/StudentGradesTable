@@ -1,27 +1,55 @@
-Student Grades Table
+# Student Grades Table Web App
 
-This project recreates a dynamic student gradebook as a web app using HTML, CSS, and JavaScript.
-It manages hypothetical assignment grades for ten students, allowing manual editing of grades and providing real-time calculations of final scores. 
-The design mimics a clean online table with alternating row colors, aligned text, and editable fields—except for the final average column, which is calculated automatically.
+## Project Overview
 
+This project implements a dynamic student gradebook web application using **HTML**, **CSS**, and **JavaScript**. It simulates assignment tracking for ten students with editable grade fields and real-time calculation of final averages. The interface replicates a clean, modern table layout with usability-focused features.
 
-Interactive Functionality
-Auto-Average Calculation
-Final grade (average of the five assignments) updates in real time whenever a grade is entered or changed. Results are rounded, whole-number percentages (e.g., "72%").
+---
 
-Invalid Input Handling
-Entries outside the 0–100 range or invalid data are replaced with “-”, meaning not submitted.
+## Key Features
 
-Missing Assignment Counter
-A counter beneath the table shows how many assignments are unsubmitted. Yellow highlights mark these cells.
+### Auto-Average Calculation
+- Final grades are automatically calculated as the average of five assignments.
+- Updates in real time as grades are entered or modified.
+- Output format: whole-number percentages (e.g., `72%`).
 
-Grade Format Toggle
-Clicking the "Average" column header toggles all final grades between:
+### Invalid Input Handling
+- Input values outside the `0–100` range or non-numeric entries are treated as invalid.
+- Invalid entries are replaced with a dash (`-`), indicating a missing submission.
 
-Percent format (e.g., 85%)
+### Missing Assignment Counter
+- A live counter below the table displays how many assignments are unsubmitted.
+- Empty or invalid cells are highlighted in **yellow** for visibility.
 
-Letter grade (e.g., B)
+### Grade Format Toggle
+- Clicking the **"Average"** column header toggles grade formats:
+  - **Percentage:** e.g., `85%`
+  - **Letter Grade:** e.g., `B`
+  - **4.0 GPA Scale:** e.g., `3.0`
+- The header text updates accordingly:
+  - `Average [%]`
+  - `Average [Letter]`
+  - `Average [4.0]`
 
-4.0 GPA scale (e.g., 3.0)
-The column header updates accordingly: Average [%], Average [Letter], or Average [4.0].
+---
 
+## Technologies Used
+
+- **Frontend:** HTML, CSS, JavaScript (Vanilla)
+- **No Backend Required**
+
+---
+
+## How to Run
+
+1. Clone or download the repository.
+2. Open `index.html` in any modern web browser.
+3. Interact directly with the grade table.
+
+---
+
+## Notes
+
+- All cells except the final average column are editable.
+- Uses native DOM manipulation—no external libraries.
+- Clean and responsive design with alternating row colors for readability.
